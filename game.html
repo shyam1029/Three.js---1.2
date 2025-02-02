@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: #f2ae0f;
+      margin: 0;
+      padding: 0;
+    }
+    canvas {
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+  <canvas class="webgl"></canvas>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@v0.172.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.172.0/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module">
+    import GUI from 'https://cdn.jsdelivr.net/npm/lil-gui@0.20/+esm';
+  </script>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
